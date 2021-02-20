@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tws.trevon.customwork.CarouselLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+     android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingEnd="0.5dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="0dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="false">
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/splash_logo_trevon"
+                android:scaleType="fitXY"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</com.tws.trevon.customwork.CarouselLinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_addr_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/black_post_title"
+        app:title="Shipping Address"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_address_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/add_new_address"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_height="match_parent">
+            <TextView
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/alpha_black_color"
+                android:text="ADD NEW ADDRESS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/view_line_color"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:background="@color/carrot_color"
+            android:id="@+id/proceed"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="PROCEED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

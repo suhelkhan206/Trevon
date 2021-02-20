@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_order_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title=""
+        android:background="@color/white"
+        />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/order_detail_full_view"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:background="#FFFCDE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/order_id"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="OrderID: BD1855CB"
+                                android:textSize="16sp"
+                                android:textColor="#747474"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:id="@+id/download_invoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:background="@drawable/red_border"
+                            android:orientation="horizontal"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/download_black"/>
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black_post_title"
+                                android:textSize="8dp"
+                                android:text="Download Invoice"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_line_color">
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:paddingBottom="10dp"
+                    android:background="#FFFAF8"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:text="Order Date"
+                            android:textSize="14sp"
+                            android:textColor="#747474"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/order_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="end|center_vertical"
+                            android:text=""
+                            android:textColor="#747474"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:text="Transaction ID "
+                            android:textSize="14sp"
+                            android:textColor="#747474"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/transection_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:gravity="end|center_vertical"
+                            android:text=""
+                            android:textColor="#747474"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:text="Total Amount"
+                            android:textSize="16sp"
+                            android:textColor="@color/black_post_title"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/total_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="end|center_vertical"
+                            android:textSize="16sp"
+                            android:textColor="@color/black_post_title" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:background="@drawable/yellow_line_border"
+                                android:layout_width="wrap_content"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/payment_type"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:text="Online"
+                                    android:textSize="14sp"
+                                    android:textColor="#747474"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/cancel_order"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/cancel_btn_border"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/order_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:text="  Cancel  "/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/order_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_line_color">
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/order_track_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/view_order_placed"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_status_complete_green"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderplaced"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/orderplaced" />
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/orderplaced"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/orderplaced"
+                        app:layout_constraintStart_toEndOf="@+id/view_order_placed"
+                        tools:ignore="MissingConstraints" />
+                    <View
+                        app:layout_constraintTop_toTopOf="@+id/orderplaced"
+                        app:layout_constraintEnd_toEndOf="@+id/orderplaced"
+                        app:layout_constraintStart_toStartOf="@+id/orderplaced"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderplaced"
+                        android:id="@+id/supporter_placed"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:id="@+id/textorderplaced"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/order_placed"
+                        android:textColor="@color/black_post_title"
+                        android:textSize="16sp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/supporter_placed"
+                        app:layout_constraintStart_toEndOf="@+id/orderplaced"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderplaced"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/orderplaced"
+                        />
+                    <TextView
+                        android:alpha="0.5"
+                        android:id="@+id/ordered_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="@id/textorderplaced"
+                        app:layout_constraintStart_toStartOf="@+id/textorderplaced"
+                        app:layout_constraintTop_toBottomOf="@+id/textorderplaced" />
+
+
+                    ////
+                    <View
+                        android:id="@+id/view_order_confirmed"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_status_complete_green"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_orderconfirmed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/img_orderconfirmed" />
+                    <ImageView
+                        android:id="@+id/img_orderconfirmed"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="40dp"
+                        app:layout_constraintStart_toEndOf="@+id/view_order_confirmed"
+                        app:layout_constraintTop_toBottomOf="@+id/orderplaced"
+                        android:src="@drawable/orderconfirmed"
+                        android:layout_width="1dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="20dp" />
+                    <View
+                        app:layout_constraintTop_toTopOf="@+id/img_orderconfirmed"
+                        app:layout_constraintEnd_toEndOf="@+id/img_orderconfirmed"
+                        app:layout_constraintStart_toStartOf="@+id/img_orderconfirmed"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_orderconfirmed"
+                        android:id="@+id/supporter_confirmed"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:id="@+id/text_confirmed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Order Confirmed"
+                        android:textColor="@color/black_post_title"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/supporter_confirmed"
+                        app:layout_constraintStart_toEndOf="@+id/img_orderconfirmed"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_orderconfirmed"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/img_orderconfirmed"
+                        />
+                    <TextView
+                        android:alpha="0.5"
+                        android:id="@+id/delivery_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        app:layout_constraintEnd_toEndOf="@id/text_confirmed"
+                        app:layout_constraintStart_toStartOf="@+id/text_confirmed"
+                        app:layout_constraintTop_toBottomOf="@+id/text_confirmed" />
+
+                    <View
+                        android:id="@+id/placed_divider"
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@color/green"
+                        app:layout_constraintBottom_toTopOf="@+id/view_order_confirmed"
+                        app:layout_constraintEnd_toEndOf="@+id/view_order_placed"
+                        app:layout_constraintStart_toStartOf="@+id/view_order_placed"
+                        app:layout_constraintTop_toBottomOf="@id/view_order_placed" />
+
+                  ////
+                    <View
+                        android:id="@+id/view_order_processed"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_status_completed"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderprocessed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/orderprocessed" />
+                    <ImageView
+                        android:id="@+id/orderprocessed"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/orderprocessed"
+                        app:layout_constraintStart_toEndOf="@+id/view_order_processed"
+                        app:layout_constraintTop_toBottomOf="@+id/img_orderconfirmed" />
+                    <View
+                        app:layout_constraintTop_toTopOf="@+id/orderprocessed"
+                        app:layout_constraintEnd_toEndOf="@+id/orderprocessed"
+                        app:layout_constraintStart_toStartOf="@+id/orderprocessed"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderprocessed"
+                        android:id="@+id/supporter_processed"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:id="@+id/textorderprocessed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Going for Delivery"
+                        android:textColor="@color/black_post_title"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintBottom_toTopOf="@+id/supporter_processed"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/orderprocessed"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderprocessed"
+                        app:layout_constraintTop_toTopOf="@+id/orderprocessed"
+                        />
+                    <TextView
+                        android:alpha="0.5"
+                        android:id="@+id/return_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        app:layout_constraintEnd_toEndOf="@id/textorderprocessed"
+                        app:layout_constraintStart_toStartOf="@+id/textorderprocessed"
+                        app:layout_constraintTop_toBottomOf="@+id/textorderprocessed" />
+                    <View
+                        android:id="@+id/con_divider"
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@color/green"
+                        app:layout_constraintBottom_toTopOf="@+id/view_order_processed"
+                        app:layout_constraintEnd_toEndOf="@+id/view_order_confirmed"
+                        app:layout_constraintStart_toStartOf="@+id/view_order_confirmed"
+                        app:layout_constraintTop_toBottomOf="@id/view_order_confirmed" />
+
+                    ////
+                    <View
+                        android:id="@+id/view_order_pickup"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_status_completed"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderpickup"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/orderpickup" />
+                    <ImageView
+                        android:id="@+id/orderpickup"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/readytopickup"
+                        app:layout_constraintStart_toEndOf="@+id/view_order_pickup"
+                        app:layout_constraintTop_toBottomOf="@+id/orderprocessed" />
+                    <View
+                        app:layout_constraintTop_toTopOf="@+id/orderpickup"
+                        app:layout_constraintEnd_toEndOf="@+id/orderpickup"
+                        app:layout_constraintStart_toStartOf="@+id/orderpickup"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderpickup"
+                        android:id="@+id/supporter_pickup"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:id="@+id/textorderpickup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Completed "
+                        android:textColor="@color/black_post_title"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintBottom_toTopOf="@+id/supporter_pickup"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/orderpickup"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderpickup"
+                        app:layout_constraintTop_toTopOf="@+id/orderpickup"
+                        />
+                    <TextView
+                        android:alpha="0.5"
+                        android:id="@+id/refund_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        app:layout_constraintEnd_toEndOf="@id/textorderpickup"
+                        app:layout_constraintStart_toStartOf="@+id/textorderpickup"
+                        app:layout_constraintTop_toBottomOf="@+id/textorderpickup" />
+                    <View
+                        android:id="@+id/ready_divider"
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:alpha="0.5"
+                        android:background="@color/colorPrimaryDark"
+                        app:layout_constraintBottom_toTopOf="@+id/view_order_pickup"
+                        app:layout_constraintEnd_toEndOf="@+id/view_order_processed"
+                        app:layout_constraintStart_toStartOf="@+id/view_order_processed"
+                        app:layout_constraintTop_toBottomOf="@id/view_order_processed" />
+
+
+                    ///
+                    <View
+                        android:id="@+id/view_order_refund"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_status_completed"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderrefund"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/orderrefund" />
+                    <ImageView
+                        android:id="@+id/orderrefund"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/readytopickup"
+                        app:layout_constraintStart_toEndOf="@+id/view_order_refund"
+                        app:layout_constraintTop_toBottomOf="@+id/orderpickup" />
+                    <View
+                        app:layout_constraintTop_toTopOf="@+id/orderrefund"
+                        app:layout_constraintEnd_toEndOf="@+id/orderrefund"
+                        app:layout_constraintStart_toStartOf="@+id/orderrefund"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderrefund"
+                        android:id="@+id/order_refund_supporter"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:id="@+id/textorder_refund"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Return Requested"
+                        android:textColor="@color/black_post_title"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintBottom_toTopOf="@+id/order_refund_supporter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/orderrefund"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderrefund"
+                        app:layout_constraintTop_toTopOf="@+id/orderrefund"
+                        />
+                    <TextView
+                        android:alpha="0.5"
+                        android:id="@+id/refund_return_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="@id/textorder_refund"
+                        app:layout_constraintStart_toStartOf="@+id/textorder_refund"
+                        app:layout_constraintTop_toBottomOf="@+id/textorder_refund" />
+                    <View
+                        android:id="@+id/refund_divider"
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:alpha="0.5"
+                        android:background="@color/colorPrimaryDark"
+                        app:layout_constraintBottom_toTopOf="@+id/view_order_refund"
+                        app:layout_constraintEnd_toEndOf="@+id/view_order_pickup"
+                        app:layout_constraintStart_toStartOf="@+id/view_order_pickup"
+                        app:layout_constraintTop_toBottomOf="@id/view_order_pickup" />
+
+                    ///
+                    <View
+                        android:id="@+id/view_order_return"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_status_completed"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderreturn"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/orderreturn" />
+                    <ImageView
+                        android:id="@+id/orderreturn"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/readytopickup"
+                        app:layout_constraintStart_toEndOf="@+id/view_order_return"
+                        app:layout_constraintTop_toBottomOf="@+id/orderrefund" />
+                    <View
+                        app:layout_constraintTop_toTopOf="@+id/orderreturn"
+                        app:layout_constraintEnd_toEndOf="@+id/orderreturn"
+                        app:layout_constraintStart_toStartOf="@+id/orderreturn"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderreturn"
+                        android:id="@+id/order_return_supporter"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:id="@+id/textorder_return"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Refunded "
+                        android:textColor="@color/black_post_title"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintBottom_toTopOf="@+id/order_return_supporter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/orderreturn"
+                        app:layout_constraintBottom_toBottomOf="@+id/orderreturn"
+                        app:layout_constraintTop_toTopOf="@+id/orderreturn"
+                        />
+                    <TextView
+                        android:alpha="0.5"
+                        android:id="@+id/return_date_final"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="@id/textorder_return"
+                        app:layout_constraintStart_toStartOf="@+id/textorder_return"
+                        app:layout_constraintTop_toBottomOf="@+id/textorder_return" />
+                    <View
+                        android:id="@+id/return_divider"
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:alpha="0.5"
+                        android:background="@color/colorPrimaryDark"
+                        app:layout_constraintBottom_toTopOf="@+id/view_order_return"
+                        app:layout_constraintEnd_toEndOf="@+id/view_order_refund"
+                        app:layout_constraintStart_toStartOf="@+id/view_order_refund"
+                        app:layout_constraintTop_toBottomOf="@id/view_order_refund" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/all_item_calculation"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRICE DETAILS"
+                        android:textSize="16sp"
+                        android:textColor="@color/gray_color"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:padding="2dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/price_items"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:text="Price (6 items)"
+                        android:textSize="14sp"
+                        android:textColor="@color/black_post_title"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/total_mrp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical"
+                        android:text=""
+                        android:textColor="@color/black_post_title"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:text="Discount"
+                        android:textSize="14sp"
+                        android:textColor="@color/black_post_title"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/cart_discount"
+                        android:layout_weight="1"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="end|center_vertical"
+                        android:layout_width="wrap_content"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:textColor="@color/black_post_title"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:text="Delivery Charges"
+                        android:textSize="14sp"
+                        android:textColor="@color/black_post_title"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/delivery_charges"
+                        android:layout_weight="1"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="end|center_vertical"
+                        android:layout_width="wrap_content"
+                        android:text="FREE"
+                        android:textSize="14sp"
+                        android:textColor="@color/black_post_title"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/view_line_color"
+                    />
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:text="Total Amount"
+                        android:textSize="16sp"
+                        android:textColor="@color/black_color"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/subtotal"
+                        android:layout_weight="1"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="end|center_vertical"
+                        android:layout_width="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/black_color"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:padding="2dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:text="GST"
+                        android:textSize="14sp"
+                        android:textColor="@color/black_post_title"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/gst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical"
+                        android:text=""
+                        android:textColor="@color/black_post_title"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/view_line_color"
+                    />
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/save_amount"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:text="You will save 9094 on this order"
+                        android:textSize="16sp"
+                        android:textColor="@color/green_light"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="#FFFCDE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Item List"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_post_title"/>
+
+            </LinearLayout>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_item_recyclerview"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

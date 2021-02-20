@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Five">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/alpha_gray"/>
+
+            <LinearLayout
+                android:id="@+id/open_call_dailer"
+                android:padding="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@drawable/wallet_background"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:textColor="@color/carrot_color"
+                    android:text="Call us at 9517536542"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gmail_click"
+                android:padding="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@drawable/wallet_background"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:textColor="@color/carrot_color"
+                    android:text="Email us at help@layroad.com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp"
+                    android:text="Call support  timming are from 10am - 7pm"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/muli_semibold"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp"
+                    android:text="Beware of fraudulent calls - Layroad will never call
+you asking for your bank/card details or OTP"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/muli_semibold"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

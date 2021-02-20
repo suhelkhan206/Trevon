@@ -1,0 +1,13 @@
+<vector android:height="14.383562dp" android:viewportHeight="70"
+    android:viewportWidth="73" android:width="15dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/app_btn_pink" android:pathData="M10.8999,48.8652l20.584,-9.2133l1.9962,4.4599l-20.584,9.2133z"/>
+    <path android:fillColor="@color/app_btn_pink" android:pathData="M61.1719,48.8652l-20.584,-9.2134l-1.9962,4.4599l20.584,9.2134z"/>
+    <path android:fillColor="@color/app_btn_pink" android:pathData="M37.5864,44.3521l-0,-22.5519l-4.8863,-0l-0,22.5519z"/>
+    <path android:fillColor="@color/app_btn_pink" android:pathData="M35.3312,42.0968m-9.3966,0a9.3966,9.3966 0,1 1,18.7933 0a9.3966,9.3966 0,1 1,-18.7933 0"/>
+    <path android:fillColor="@color/app_btn_pink" android:pathData="M22.1307,69.9111C22.1307,63.7999 17.1765,58.8458 11.0653,58.8458C4.9541,58.8458 0,63.7999 0,69.9111L12.0612,69.9111L22.1307,69.9111Z"/>
+    <path android:fillColor="@color/app_btn_pink" android:pathData="M10.9548,51.7641m-5.5327,0a5.5327,5.5327 0,1 1,11.0653 0a5.5327,5.5327 0,1 1,-11.0653 0"/>
+    <path android:fillColor="@color/app_btn_pink" android:pathData="M72.1207,69.9111C72.1207,63.7999 67.1665,58.8458 61.0553,58.8458C54.9441,58.8458 49.99,63.7999 49.99,69.9111L62.0512,69.9111L72.1207,69.9111Z"/>
+    <path android:fillColor="@color/app_btn_pink" android:pathData="M60.9448,51.7641m-5.5327,0a5.5327,5.5327 0,1 1,11.0653 0a5.5327,5.5327 0,1 1,-11.0653 0"/>
+    <path android:fillColor="@color/app_btn_pink" android:pathData="M46.1858,23.6797C46.1858,17.5685 41.2317,12.6144 35.1205,12.6144C29.0093,12.6144 24.0552,17.5685 24.0552,23.6797L36.1164,23.6797L46.1858,23.6797Z"/>
+    <path android:fillColor="@color/app_btn_pink" android:pathData="M35.01,5.5327m-5.5327,0a5.5327,5.5327 0,1 1,11.0653 0a5.5327,5.5327 0,1 1,-11.0653 0"/>
+</vector>

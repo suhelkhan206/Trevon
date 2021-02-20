@@ -1,0 +1,122 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="minimum_container_margin">5dp</dimen>
+    <dimen name="medium_container_margin">8dp</dimen>
+    <dimen name="average_container_margin">10dp</dimen>
+    <dimen name="maximum_container_margin">12dp</dimen>
+    <dimen name="enchanted_view_pager_margin">0dp</dimen>
+    <dimen name="nominal_inner_container_margin">2dp</dimen>
+    <dimen name="item_offset">2dp</dimen>
+    <dimen name="line_vertical_separator_margin">3dp</dimen>
+
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="biggest_text">22sp</dimen>
+    <dimen name="bigger_text">20sp</dimen>
+    <dimen name="big_text">18sp</dimen>
+    <dimen name="medium_text">16sp</dimen>
+    <dimen name="small_text">14sp</dimen>
+    <dimen name="smaller_text">12sp</dimen>
+    <dimen name="smaller_text_2">11sp</dimen>
+    <dimen name="smallest_text">10sp</dimen>
+    <dimen name="ultra_smallest_text">8sp</dimen>
+    <dimen name="ultra_smallest_text_2">9sp</dimen>
+
+    <dimen name="fab_compat_margin">2dp</dimen>
+    <dimen name="fab_compat_border_width">2dp</dimen>
+
+    <dimen name="components_separator_vertical_margin">50dp</dimen>
+    <dimen name="components_horizontal_margin">16dp</dimen>
+    <dimen name="components_horizontal_medium_margin">12dp</dimen>
+    <dimen name="components_horizontal_small_margin">10dp</dimen>
+    <dimen name="components_horizontal_minimum_margin">8dp</dimen>
+    <dimen name="components_horizontal_ultra_minimum_margin">5dp</dimen>
+
+    <dimen name="components_vertical_biggest_margin">30dp</dimen>
+    <dimen name="components_vertical_big_margin">20dp</dimen>
+    <dimen name="components_vertical_margin">16dp</dimen>
+    <dimen name="components_vertical_medium_margin">12dp</dimen>
+    <dimen name="components_vertical_minimum_margin">8dp</dimen>
+    <dimen name="components_vertical_ultra_minimum_margin">4dp</dimen>
+
+    <dimen name="view_profile_count_top_margin">80dp</dimen>
+    <dimen name="post_list_user_image_size">50dp</dimen>
+    <dimen name="post_list_sub_cat_name_width">85dp</dimen>
+    <dimen name="sky_post_list_sub_cat_name_width">65dp</dimen>
+    <dimen name="post_list_user_smaller_image_size_2">42dp</dimen>
+    <dimen name="post_list_user_smaller_image_size">40dp</dimen>
+    <dimen name="post_list_sky_user_image_size">30dp</dimen>
+    <dimen name="post_list_user_smallest_image_size">30dp</dimen>
+    <dimen name="post_image_stack_view_height">60dp</dimen>
+    <dimen name="thin_button_height">40dp</dimen>
+
+    <dimen name="small_icon_size">10dp</dimen>
+    <dimen name="smallest_icon_size">6dp</dimen>
+
+    <dimen name="gridview_user_icon_size">70dp</dimen>
+    <dimen name="pop_up_user_icon_size">50dp</dimen>
+
+    <dimen name="tab_max_width">30dp</dimen>
+
+    <dimen name="progress_block_size">30dp</dimen>
+
+    <dimen name="post_dummy_line_right_left_padding">15dp</dimen>
+    <dimen name="post_dummy_line_width">1dp</dimen>
+    <dimen name="post_dummy_circle_width">10dp</dimen>
+    <dimen name="post_standard_left_small_additional_margin">6dp</dimen>
+    <dimen name="post_standard_right_margin">10dp</dimen>
+    <!--(post_dummy_line_right_left_padding + post_dummy_line_width) - (post_dummy_circle_width/2)-->
+    <dimen name="post_dummy_circle_left_margin">11dp</dimen>
+    <!-- post_dummy_line_right_left_padding * 2 + post_dummy_line_width + post_standard_left_small_additional_margin -->
+    <dimen name="final_minimum_left_margin_for_post">30dp</dimen>
+
+    <dimen name="settings_dummy_circle_left_margin">18dp</dimen>
+    <!-- settings_vertical_line_left_margin + settings_dummy_circle_size/2 -->
+    <dimen name="settings_vertical_line_left_margin">22dp</dimen>
+    <dimen name="settings_text_left_margin">22dp</dimen>
+    <dimen name="settings_arrow_right_margin">12dp</dimen>
+    <dimen name="settings_text_size">14sp</dimen>
+    <dimen name="settings_item_min_height">52dp</dimen>
+    <dimen name="settings_right_arrow_size">18dp</dimen>
+    <dimen name="settings_right_arrow_height_size">15dp</dimen>
+    <dimen name="settings_vertical_line_width">0.5dp</dimen>
+    <dimen name="settings_horizontal_line_left_margin">45dp</dimen>
+    <dimen name="settings_horizontal_line_right_margin">35dp</dimen>
+    <dimen name="settings_dummy_circle_extra_top_margin">4dp</dimen>
+    <dimen name="toolbar_default_elevation">3dp</dimen>
+
+    <dimen name="people_circle_image_overlap_icon_size">22dp</dimen>
+    <dimen name="write_new_post_text_view_vertical_size">185dp</dimen>
+
+    <dimen name="write_new_post_bottom_button_max_height">70dp</dimen>
+    <dimen name="write_new_post_bottom_send_button_height">60dp</dimen>
+    <dimen name="write_new_post_bottom_small_button_max_height">40dp</dimen>
+    <dimen name="write_new_post_bottom_smaller_button_max_height">30dp</dimen>
+
+    <dimen name="view_profile_people_count_container_size">50dp</dimen>
+    <dimen name="view_post_description_height">210dp</dimen>
+
+    <dimen name="view_post_slant_triangular_shape_height">40dp</dimen>
+    <!-- view_post_slant_triangular_shape_height/2 + 1 -->
+    <dimen name="view_post_slant_triangular_shape_text_top_margin">21dp</dimen>
+
+    <dimen name="app_launcher_image_size">35dp</dimen>
+    <dimen name="video_play_icon_size">70dp</dimen>
+    <dimen name="video_play_icon_sky_size">40dp</dimen>
+
+    <dimen name="post_share_view_width">1200px</dimen>
+    <dimen name="post_share_view_height">630px</dimen>
+    <dimen name="post_share_view_category_top_margin">33px</dimen>
+    <dimen name="post_share_view_image_name_distance">15px</dimen>
+    <dimen name="small_text_px">42px</dimen>
+    <dimen name="small_text_px_2">45px</dimen>
+
+    <dimen name="wnpsf2_category_button_width">200dp</dimen>
+
+    <dimen name="view_profile_height_1">83dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">150dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

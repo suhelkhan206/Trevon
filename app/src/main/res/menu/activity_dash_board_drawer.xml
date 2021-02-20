@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <menu
+    tools:showIn="navigation_view"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:title="Dash Board"
+        android:icon="@drawable/dashboard"
+        android:id="@+id/dash_board"/>
+
+    <item
+        android:title="Profile"
+        android:icon="@drawable/profile"
+        android:id="@+id/profile"/>
+
+    <item
+        android:title="Reset Password"
+        android:icon="@drawable/lock"
+        android:id="@+id/reset_password"/>
+    </group>
+    <group
+        android:id="@+id/second_g"
+        android:checkableBehavior="none">
+    <item
+        android:title="Exam"
+        android:icon="@drawable/edit"
+        android:id="@+id/exam"/>
+
+    <item
+        android:title="Result"
+        android:icon="@drawable/sheet"
+        android:id="@+id/result"/>
+
+    <item
+        android:title="Update"
+        android:icon="@drawable/sheet"
+        android:id="@+id/update"/>
+
+        <item
+            android:title="Course"
+            android:icon="@drawable/sheet"
+            android:id="@+id/course"/>
+
+    <item
+        android:title="Leader Board"
+        android:icon="@drawable/meter"
+        android:id="@+id/leader_board"/>
+</group>
+    <group  android:id="@+id/third_g"
+        android:checkableBehavior="none">
+    <item
+        android:title="Payment"
+        android:icon="@drawable/check"
+        android:id="@+id/payment"/>
+
+    <item
+        android:title="Payment History"
+        android:icon="@drawable/sheet"
+        android:id="@+id/payment_history"/>
+    </group>
+    <group  android:id="@+id/four_g"
+        android:checkableBehavior="none">
+    <item
+        android:title="Faqs"
+        android:icon="@drawable/faq"
+        android:id="@+id/faqs"/>
+
+    <item
+        android:title="About us"
+        android:icon="@drawable/about"
+        android:id="@+id/about_us"/>
+
+    <item
+        android:title="Contact us"
+        android:icon="@drawable/sheet"
+        android:id="@+id/contact_us"/>
+
+    <item
+        android:title="WebSite"
+        android:icon="@drawable/sheet"
+        android:id="@+id/website"/>
+    </group>
+    <group  android:id="@+id/five_g"
+        android:checkableBehavior="none">
+    <item android:title="Feedback"
+        android:icon="@drawable/feedback"
+        android:id="@+id/feed_back"/>
+
+        <item android:title="Share App"
+            android:icon="@drawable/ic_menu_share"
+            android:id="@+id/share_app"/>
+
+        <item android:title="Rate Us"
+            android:icon="@drawable/rate"
+            android:id="@+id/rate_us"/>
+
+        <item android:title="SignOut"
+            android:icon="@drawable/logout"
+            android:id="@+id/signout"/>
+    </group>
+
+</menu>

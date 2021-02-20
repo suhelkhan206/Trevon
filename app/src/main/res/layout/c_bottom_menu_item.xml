@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bmi_rl_menu_complete_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/bmi_rl_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingTop="@dimen/components_vertical_medium_margin"
+        android:paddingBottom="@dimen/components_vertical_medium_margin"
+        >
+
+        <ImageView
+            android:id="@+id/bmi_iv_menu_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/gray_color"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="7dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/bmi_tv_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discrimination between"
+            android:textSize="@dimen/big_text"
+            android:textStyle="normal"
+            android:textColor="@color/gray_color"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

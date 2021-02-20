@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/share_earn"
+        android:icon="@drawable/share_earn"
+        android:title="Share &amp; Earn" />
+
+    <item
+        android:id="@+id/my_connection"
+        android:icon="@drawable/my_connection"
+        android:title="My Connections" />
+
+    <item
+        android:id="@+id/support"
+        android:icon="@drawable/support"
+        android:title="Support" />
+
+
+
+    <item
+        android:id="@+id/terms_of_use"
+        android:icon="@drawable/terms_condition"
+        android:title="Terms of use" />
+
+    <item
+        android:id="@+id/privacy_policy"
+        android:icon="@drawable/privacy_policy"
+        android:title="Privacy &amp; Policy" />
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/about_us"
+        android:title="About" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout_acc"
+        android:title="Logout" />
+
+</menu>

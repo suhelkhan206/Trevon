@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_btn_pink">#41BBAE</color>
+    <color name="app_btn_blue">#0D005E</color>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryLight">#93d7f1</color>
+    <color name="carrot_color">#41BBAE</color>
+    //#fe5756
+
+    <color name="yellow_color">#FFEF61</color>
+    <color name="colorAccent">#dadee0</color>
+    <color name="colorPrimaryDark">#FF9800</color>
+    <color name="blue">#4c80cd</color>
+    <color name ="rating_fill">#FBA102</color>
+    <color name ="rating_empty">#FDA30E</color>
+    <!-- colors for letters -->
+    <color name="bg_screen1">#FFC300</color>
+    <color name="pinkdark">#f70658</color>
+    <color name="pink">#ea1e63</color>
+    <color name="green_light">#67C146</color>
+    <color name="green">#0aa604</color>67C146
+    <color name="Yellow">#EEF59707</color>
+    <color name="yellowwww">#EEF59707</color>
+    <color name="green_color">#87a43b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="thank_you_color">#86bad8</color>
+    <color name="miss_you_color">#e76875</color>
+    <color name="admire_you_color">#9fbf4b</color>
+    <color name="i_care_color">#FF4081</color>
+    <color name="thank_you_dark_color">#6ba0be</color>
+    <color name="miss_you_dark_color">#ca4d5a</color>
+    <color name="admire_you_dark_color">#87a43b</color>
+    <color name="i_care_dark_color">#d9336b</color>
+    <color name="thank_you_light_color">#a8d7f2</color>
+    <color name="miss_you_light_color">#f78a95</color>
+    <color name="admire_you_light_color">#c0df6d</color>
+    <color name="alpha_thank_you_color">#cc77b5d9</color>
+    <color name="alpha_miss_you_color">#cce75362</color>
+    <color name="alpha_admire_you_color">#cc9cc13b</color>
+    <color name="user_profile_filter_color">#fafafa</color>
+
+
+    <color name="blue_color">#ff0084b4</color>
+    <color name="smooth_light_pink">#ffe8f0</color>
+
+    <color name="twitter_dark_blue">#ff0084b4</color>
+    <color name="twitter_blue">#ff4099ff</color>
+    <color name="red_color">#ffff0600</color>
+    <color name="creamy_white_color">#fffff5e7</color>
+
+    <color name="theme_color">#FEFAF3D4</color>
+    <color name="sky_image_bgcolor_ultralight">#edecec</color>
+    <color name="sky_image_bgcolor">#e6e6e6</color>
+    <color name="transparent_color">#00ffffff</color>
+    <color name="ultra_dark_gray_color">#313131</color>
+    <color name="dark_gray_color">#646464</color>
+    <color name="gray_color">#828282</color>
+    <color name="light_gray_color">#b4b4b4</color>
+    <color name="default_bg_gray_color">#aaaaaa</color>
+    <color name="ultra_light_gray_color">#d9d9d9</color>
+    <color name="super_ultra_light_gray_color">#efeeee</color>
+    <color name="white_color">#ffffffff</color>
+    <color name="less_bright_white_color">#f5f5f5</color>
+    <color name="alpha_white_color">#69ffffff</color>
+    <color name="more_alpha_white_color">#b7ffffff</color>
+    <color name="black_color">#ff000000</color>
+    <color name="black">#ff000000</color>
+    <color name="alpha_black_color">#CC000000</color>
+    <color name="text_dark_gray_color">#414141</color>
+    <color name="text_light_gray_color">#686868</color>
+    <color name="text_lighter_gray_color">#b9b8b8</color>
+    <color name="alpha_darker_black_color">#c1000000</color>
+    <color name="alpha_dark_black_color">#a3000000</color>
+    <color name="alpha_light_black_color">#81000000</color>
+    <color name="ultra_light_alpha_gray_color">#1a000000</color>
+    <color name="super_ultra_light_alpha_gray_color">#1a000000</color>
+    <color name="critical_button_color">@color/critical_color</color>
+    <color name="positive_color">#02cb0f</color>
+    <color name="critical_color">#ff0000</color>
+    <color name="sky_blue_color">#81B3CF</color>
+    <color name="sky_blue_color_2">#f8077db7</color>
+    <color name="sky_blue_color_3">#4fdefe</color>
+
+
+    <color name="view_line_color">#DADEE0</color>
+
+    <color name="background_gray">#F1F1F1</color>
+
+
+
+    <!-- https://www.materialpalette.com/blue/deep-orange -->
+    <!-- material theme color for dark blue  -->
+    <!--<color name="app_dark_primary_color">#20b90d</color>-->
+    <!--<color name="app_primary_color">#f810c613</color>-->
+    <!--<color name="app_accent_color">#78d155</color>-->
+    <!--<color name="app_tab_color">#e5684e</color>-->
+
+    <color name="app_dark_primary_color">#0aa604</color>
+    <color name="app_primary_color">#07b924</color>
+    <color name="app_accent_color">#28f508</color>
+    <color name="app_tab_color">#3bb325</color>
+
+
+    <!-- material theme color for RED  -->
+
+    <color name="alpha_gray">#33000000</color>
+    <color name="alpha_medium_gray">#50000000</color>
+    <color name="dark_alpha_gray">#d9646464</color>
+    <color name="purple">#d96d02b9</color>
+    <color name="black_post_title">#303b41</color>
+    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="transparent_gray">#50000000</color>
+</resources>

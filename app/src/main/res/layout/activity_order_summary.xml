@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_gray">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/order_summary"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/black_color"
+        app:title="Order Summary"
+        android:background="@color/white"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black_post_title"
+                            android:textSize="16sp"
+                            android:text="Product MRP"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/product_mrp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 191"
+                            android:textColor="@color/black_post_title"
+                            android:textSize="16sp"
+
+                            android:textAlignment="viewEnd"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black_post_title"
+                            android:textSize="16sp"
+                            android:text="Your Sale Price"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/your_sale_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 191"
+                            android:textColor="@color/black_post_title"
+                            android:textSize="16sp"
+
+                            android:textAlignment="viewEnd"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/admire_you_light_color"
+                            android:textSize="16sp"
+                            android:text="Margin"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/margine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 191"
+                            android:textColor="@color/admire_you_light_color"
+                            android:textSize="16sp"
+
+                            android:textAlignment="viewEnd"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black_post_title"
+                            android:textSize="16sp"
+                            android:text="Quantity"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/product_quantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 191"
+                            android:textColor="@color/black_post_title"
+                            android:textSize="16sp"
+
+                            android:textAlignment="viewEnd"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black_post_title"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="Margin Total"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/total_margin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 191"
+                            android:textStyle="bold"
+                            android:textColor="@color/black_post_title"
+                            android:textSize="16sp"
+
+                            android:textAlignment="viewEnd"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/smooth_light_pink">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/pinkdark"
+                            android:textSize="16sp"
+                            android:text="Sale Price"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/sale_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 191"
+                            android:textColor="@color/pinkdark"
+                            android:textSize="16sp"
+
+                            android:textAlignment="viewEnd"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/pinkdark"
+                            android:textSize="16sp"
+                            android:text="Quantity"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/quantity_sale_p"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 191"
+                            android:textColor="@color/pinkdark"
+                            android:textSize="16sp"
+
+                            android:textAlignment="viewEnd"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/pinkdark"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="Total Sale Price"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/total_sale_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 191"
+                            android:textStyle="bold"
+                            android:textColor="@color/pinkdark"
+                            android:textSize="16sp"
+
+                            android:textAlignment="viewEnd"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Coupon Discount"
+                            android:textColor="@color/pinkdark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/coupon_discount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/pinkdark"
+                            android:text="₹ 153"
+                            android:textSize="16sp"
+                            android:textAlignment="viewEnd"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   >
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Shipping Charges"
+                            android:textColor="@color/red_color"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/shipping_charges"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 0"
+                            android:textColor="@color/red_color"
+                            android:textSize="16sp"
+
+                            android:textAlignment="viewEnd"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                >
+
+                <LinearLayout
+                    android:layout_weight="1"
+                     
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_post_title"
+                        android:text="Your Total Payble Amount"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                     
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/total_payble_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_post_title"
+                        android:text="₹ 47"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textAlignment="viewEnd"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           <LinearLayout
+               android:padding="10dp"
+               android:layout_marginTop="15dp"
+               android:background="@color/white"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   >
+                   <LinearLayout
+                       android:layout_weight="1"
+                        
+                       android:layout_marginLeft="5dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       >
+
+                       <TextView
+
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black_post_title"
+                           android:text="Supplier"
+                           android:fontFamily="sans-serif-medium"
+                           android:textSize="17sp"
+                           />
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_weight="1"
+                        
+                       android:layout_marginLeft="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       >
+
+                       <TextView
+                           android:id="@+id/supplier"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black_post_title"
+                           android:text="Khazana Watch"
+                           android:fontFamily="sans-serif-medium"
+                           android:textSize="17sp"
+                           android:textAlignment="viewEnd"
+                           />
+
+                   </LinearLayout>
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                     
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:id="@+id/product_image"/>
+
+                    <LinearLayout
+                         
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/product_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black_post_title"
+                            android:text="Watch"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:textSize="18sp"
+                           android:fontFamily="sans-serif-medium"
+                            />
+
+                        <TextView
+                            android:id="@+id/product_sale_price"
+                            android:layout_marginTop="10dp"
+                            android:text="Price  ₹ 199/-"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/product_original_price"
+                            android:layout_marginTop="5dp"
+                            android:text="MRP  ₹ 199/-"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                             
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:id="@+id/product_size"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:text="Size  Free size"
+                                />
+
+                            <TextView
+                                android:id="@+id/quantity"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"      android:textSize="16sp"
+                                android:text="Quantity  1"
+                                />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="SHIPPING ADDRESS"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_height="wrap_content"/>
+
+
+                    <ImageView
+                        android:id="@+id/edit_address"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/ic_small_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/address_holder_name"
+                        android:text="Rohit Nandi"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/place_order"
+        android:background="@color/carrot_color"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="60dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/pro_button"
+            android:text="Place Order"/>
+
+    </LinearLayout>
+
+</LinearLayout>

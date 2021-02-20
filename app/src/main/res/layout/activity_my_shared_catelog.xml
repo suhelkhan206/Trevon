@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+ >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/sahred_catalog_tool_bar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/black_color"
+        app:title="My Shared Catalogs"
+        android:background="@color/white"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_shared_catelog_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_margin="4dp"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bussiness"
+        android:icon="@drawable/business_profile"
+        android:title="Bussiness"
+        />
+
+    <item
+        android:id="@+id/my_wish_list"
+        android:icon="@drawable/wish_heart"
+        android:title="Wishlist" />
+
+        <item
+            android:id="@+id/my_orders"
+            android:icon="@drawable/my_order"
+            android:title="My Orders" />
+
+    <item
+        android:id="@+id/order_your_design"
+        android:icon="@drawable/order_your_design"
+        android:title="Order Your Design" />
+
+    <item
+        android:id="@+id/my_address"
+        android:icon="@drawable/profile_home"
+        android:title="My Address"
+        />
+
+
+        <item
+            android:id="@+id/share_earn"
+            android:icon="@drawable/share_earn"
+            android:title="Share &amp; Earn" />
+
+        <item
+            android:id="@+id/support"
+            android:icon="@drawable/support"
+            android:title="Support" />
+
+        <item
+            android:id="@+id/term_of_use"
+            android:icon="@drawable/terms_condition"
+            android:title="Terms of use" />
+
+
+    <item
+        android:id="@+id/privacy_policy"
+        android:icon="@drawable/privacy_policy"
+        android:title="Privacy &amp; policy" />
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/about_us"
+        android:title="About" />
+
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/help"
+        android:title="Help" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout_acc"
+        android:title="Logout" />
+
+</menu>

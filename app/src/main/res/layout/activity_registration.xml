@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/log_signup_background">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginLeft="15dip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        >
+
+                        <EditText
+                            android:id="@+id/register_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black_color"
+                            android:textColorHint="@color/black_color"
+                            android:hint="Enter Email"
+                            android:textSize="18sp"
+                            android:singleLine="true"
+                            android:maxLines="6"
+                            android:imeOptions="actionSearch">
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <EditText
+                            android:id="@+id/pre_regis_name"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/black_color"
+                            android:textColorHint="@color/black_color"
+                            android:layout_height="match_parent"
+                            android:hint="Enter Name"
+                            android:imeOptions="actionSearch"
+                            android:maxLines="6"
+                            android:singleLine="true"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <EditText
+                            android:id="@+id/pre_regis_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black_color"
+                            android:textColorHint="@color/black_color"
+                            android:hint="Enter Mobile no."
+                            android:imeOptions="actionSearch"
+                            android:inputType="phone"
+                            android:maxLines="6"
+                            android:singleLine="true"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/registration_gray_border"
+                        >
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/company_reg_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        >
+
+                        <EditText
+                            android:id="@+id/register_store_company_name"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/black_color"
+                            android:textColorHint="@color/black_color"
+                            android:layout_height="match_parent"
+                            android:hint="Store/Company Name"
+                            android:textSize="18sp"
+                            android:singleLine="true"
+                            android:maxLines="6"
+                            android:imeOptions="actionSearch">
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/gst_reg_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        >
+
+                        <EditText
+                            android:id="@+id/register_gst_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:textColor="@color/black_color"
+                            android:textColorHint="@color/black_color"
+                            android:hint="GST No."
+                            android:textSize="18sp"
+                            android:inputType="textCapSentences"
+                            android:singleLine="true"
+                            android:maxLines="6"
+                            android:imeOptions="actionSearch">
+                        </EditText>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_round_login">
+                        <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+
+                        <Button
+                            android:id="@+id/btn_continue_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="?android:selectableItemBackground"
+                            android:gravity="center"
+                            android:text="CONTINUE REGISTRATION"
+                            android:textStyle="bold"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginRight="15dip"
+                android:layout_marginLeft="15dip"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/click_for_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/signin_text"
+                        android:layout_width="wrap_content"
+                        android:textColor="#BE0072"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Or SignIn"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:id="@+id/facebook_sign_in_custom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_facebook_2"/>
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:id="@+id/google_sign_in_custom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_google_2"/>
+
+                </LinearLayout>
+
+
+                <com.google.android.gms.common.SignInButton
+                    android:visibility="gone"
+                    android:id="@+id/google_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:elevation="10dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <com.facebook.login.widget.LoginButton
+                    android:visibility="gone"
+                    android:id="@+id/login_button"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"
+                    android:text="Facebook"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

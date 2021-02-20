@@ -1,0 +1,17 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/page_loading_centre_spinner"
+        android:indeterminateOnly="true"
+        android:indeterminateTint="@color/white_color"
+        android:backgroundTint="@color/white_color"
+        android:indeterminateTintMode="src_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

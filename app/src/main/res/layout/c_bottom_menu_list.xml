@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/root_view"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/bml_tv_menu_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/components_vertical_minimum_margin"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="What would you like to do ?"
+        android:textSize="@dimen/small_text"/>
+
+    <View
+        android:id="@+id/bml_view_line"
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="@color/default_bg_gray_color"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/bml_tv_menu_title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bml_rv_option_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bml_view_line"
+        android:layout_marginTop="@dimen/components_vertical_margin"
+        android:scrollbars="vertical"/>
+
+    <View
+        android:id="@+id/bml_view_bottom_line"
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="@color/default_bg_gray_color"
+        android:layout_marginTop="@dimen/components_vertical_margin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/bml_rv_option_list"/>
+
+    <TextView
+        android:id="@+id/bml_tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bml_view_bottom_line"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="center_horizontal"
+        android:text="Cancel"
+        android:textColor="@color/miss_you_color"
+        android:textSize="@dimen/big_text"/>
+
+</RelativeLayout>

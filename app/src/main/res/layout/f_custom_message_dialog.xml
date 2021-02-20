@@ -1,0 +1,89 @@
+<LinearLayout
+    android:id="@+id/root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corner_bg_white_color_2"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cd_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert"
+        android:textSize="@dimen/medium_text"
+        android:textColor="@color/gray_color"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/cd_tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="@dimen/small_text"
+        android:textStyle="normal"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="1px"
+        android:layout_marginRight="1px"
+        android:background="@color/white_color"
+        />
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/default_bg_gray_color"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/cd_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/cancel"
+            android:textSize="@dimen/small_text"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_toLeftOf="@+id/cd_tv_ok"
+            android:textStyle="normal"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/cd_tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight=".5"
+            android:text="@string/ok"
+            android:textSize="@dimen/small_text"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/critical_color"
+            android:gravity="center_horizontal"
+            android:textStyle="normal"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

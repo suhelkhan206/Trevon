@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CheckoutPages">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/checkout_tool_bar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/black_color"
+        app:title="Checkout"
+        android:background="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/root_payment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ultra_light_gray_color"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Promo Code"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_post_title"/>
+
+                <LinearLayout
+                    android:background="@drawable/button_dark_gray_border"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+
+                        <EditText
+                            android:id="@+id/payment_promo_code_edt"
+                            android:padding="5dp"
+                            android:backgroundTint="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="#1234"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/payment_promo_apply_btn"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/yellowwww"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Apply"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="@color/dark_gray_color"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--UPI-->
+                <RelativeLayout
+                    android:id="@+id/payment_upi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/upi_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+
+                    <RadioButton
+                        android:id="@+id/payment_upi_radio_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/payment_upi_radio_id"
+                        android:layout_toRightOf="@+id/upi_image"
+                        android:text="UPI"
+                        android:textColor="@color/black_post_title"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_line_color"/>
+
+                <RelativeLayout
+                    android:id="@+id/payment_by_card"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/cash_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/payment_online_radio_id"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/cash_image"
+                        android:layout_width="match_parent"
+                        android:text="Online (Credit/Debit Card, Net Banking, Wallet, UPI)"
+                        android:textColor="@color/black_post_title"
+                        android:textSize="16sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <RadioButton
+                        android:layout_centerVertical="true"
+                        android:id="@+id/payment_online_radio_id"
+                        android:layout_width="wrap_content"
+                        android:clickable="false"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_line_color"/>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/payment_emi"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/wallet_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/emi_text"
+                        android:layout_toLeftOf="@+id/payment_wallet_radio_id"
+                        android:layout_toRightOf="@+id/wallet_image"
+                        android:layout_width="match_parent"
+                        android:text="EMI"
+                        android:textColor="@color/black_post_title"
+                        android:textSize="16sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/emi_red_alert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="300dp"
+                        android:text="*EMI option is available only with single product"
+                        android:textColor="@color/red_color"
+                        android:textSize="14sp"
+                        android:layout_below="@+id/emi_text"
+                        />
+
+                    <RadioButton
+
+                        android:id="@+id/payment_wallet_radio_id"
+                        android:clickable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"/>
+
+
+                </RelativeLayout>
+
+                <!--cod-->
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_line_color"/>
+
+                <RelativeLayout
+                    android:id="@+id/payment_cod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/cod_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+
+                    <RadioButton
+                        android:id="@+id/payment_cod_radio_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/payment_cod_radio_id"
+                        android:layout_toRightOf="@+id/cod_image"
+                        android:text="Cash On Delivery "
+                        android:textColor="@color/black_post_title"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+
+
+                <!--end COd-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_line_color"/>
+
+
+                <!--end COd-->
+
+                <RelativeLayout
+                    android:id="@+id/payment_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/wallet_amount_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+
+                    <RadioButton
+                        android:id="@+id/payment_wallet_amount_image_radio_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false" />
+
+
+                    <TextView
+                        android:id="@+id/payment_wallet_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/payment_wallet_amount_image_radio_id"
+                        android:layout_toRightOf="@+id/wallet_amount_image"
+                        android:text="Payment Wallet "
+                        android:textColor="@color/black_post_title"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+
+
+                <!--end COd-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_line_color"/>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:text="Total Amount"
+                        android:textColor="@color/black_post_title"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/payment_total_amount_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="16sp"
+                        android:textColor="@color/green"
+                        android:layout_alignParentEnd="true"/>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:text="*2 % Extra charge on Online Payment Mode"
+                        android:textColor="@color/red_color"
+                        android:textSize="14sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/payment_button"
+        android:background="@color/carrot_color"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/button_text_order"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="CONTINUE TO PAYMENT"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

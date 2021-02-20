@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "7270100533",
+    "project_id": "trevon-b5de4",
+    "storage_bucket": "trevon-b5de4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7270100533:android:54dccd7b5fc1d8fe090b7c",
+        "android_client_info": {
+          "package_name": "com.tws.trevon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7270100533-iho3ct67s4939umukhuc42t1qtalm4l5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm218_ZEuVtD2lPdnKnvcWyLDRrJ3O_zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7270100533-iho3ct67s4939umukhuc42t1qtalm4l5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
